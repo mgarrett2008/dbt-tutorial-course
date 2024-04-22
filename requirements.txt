@@ -1,1 +1,3 @@
-dbt-bigquery==1.6.1
+dbt-bigquery
+dbt-snowflake
+dbt-databricks
