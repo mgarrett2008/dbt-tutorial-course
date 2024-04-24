@@ -34,3 +34,6 @@ models:
   lessons:
     staging:
       +materialized: table
+      +persist_docs: # Writes all of our column descriptions into BigQuery!
+        relation: true
+        columns: true
