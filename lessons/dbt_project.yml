@@ -37,3 +37,13 @@ models:
       +persist_docs: # Writes all of our column descriptions into BigQuery!
         relation: true
         columns: true
+    intermediate:
+    +materialized: view
+    +persist_docs: # Writes all of our column descriptions into BigQuery!
+      relation: true
+      columns: true
+    marts:
+      +materialized: table
+      +persist_docs: # Writes all of our column descriptions into BigQuery!
+        relation: true
+        columns: true
